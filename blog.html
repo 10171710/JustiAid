@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Blog &amp; Know Your Rights | JustiAid</title>
+  <meta name="description" content="Plain-language legal guides, rights resources and firm updates from the JustiAid team.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="blog">
+  <div class="aurora-bg" aria-hidden="true">
+    <span class="wave w1"></span>
+    <span class="wave w2"></span>
+    <span class="wave w3"></span>
+    <span class="wave w4"></span>
+  </div>
+
+  <div id="preloader" aria-hidden="true">
+    <img class="preloader-paw" src="assets/images/logo.svg" alt="Loading">
+  </div>
+
+  <div id="navbar"></div>
+
+  <main>
+    <!-- Page header -->
+    <section class="page-header" aria-label="Blog" style="background:linear-gradient(rgba(var(--bg-rgb),.7),rgba(var(--bg-rgb),.7)),url('assets/images/pexels-mikhail-nilov-8731042.jpg') center/cover no-repeat">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7 text-lg-start">
+            <span class="sec-eyebrow reveal"><i class="fa-solid fa-book-open"></i> Blog &amp; resources</span>
+            <h1 class="reveal">Know your rights, in plain language</h1>
+            <p class="text-muted reveal reveal-delay-1" style="max-width:520px">Plain-language legal guides, rights
+              resources and firm updates from the JustiAid team — so you know where you stand before you act.</p>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb reveal justify-content-center justify-content-lg-start">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block reveal">
+            <div class="neu" style="padding:14px;max-width:440px;margin-inline:auto">
+              <img src="assets/images/pexels-mikhail-nilov-8731042.jpg" alt="Blog illustration"
+                style="width:100%;height:275px;object-fit:cover;object-position:center;border-radius:calc(var(--r-md) - 8px)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog listing -->
+    <section class="section pt-2" aria-label="Blog articles">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div data-filter-group class="nav-pill-wrap mb-4 reveal">
+              <button class="nav-pill active" data-filter="all"><i class="fa-solid fa-list"></i> All</button>
+              <button class="nav-pill" data-filter="rights"><i class="fa-solid fa-book-open"></i> Know Your Rights</button>
+              <button class="nav-pill" data-filter="family"><i class="fa-solid fa-scale-balanced"></i> Family</button>
+              <button class="nav-pill" data-filter="property"><i class="fa-solid fa-building-columns"></i> Property</button>
+              <button class="nav-pill" data-filter="news"><i class="fa-solid fa-newspaper"></i> Legal News</button>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-md-6 reveal" data-filter-item="rights">
+                <article class="card-neu blog-card h-100">
+                  <div class="card-thumb"><img src="assets/images/blog-tenant.jpg" alt="Rental apartment and key illustration"></div>
+                  <div class="card-body-neu">
+                    <span class="badge" style="background:var(--accent-soft);color:var(--accent)">Know Your Rights</span>
+                    <h3 class="h5 mt-2">Tenant Rights: Deposits, Evictions &amp; Repairs</h3>
+                    <p class="small text-muted mb-3">What landlords can and cannot do, and how to protect your deposit.</p>
+                    <a class="card-link" href="blog-details.html?post=tenant-rights">Read guide <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 reveal reveal-delay-1" data-filter-item="family">
+                <article class="card-neu blog-card h-100">
+                  <div class="card-thumb"><img src="assets/images/blog-divorce.jpg" alt="Two hearts illustration for divorce guide"></div>
+                  <div class="card-body-neu">
+                    <span class="badge" style="background:var(--accent-soft);color:var(--accent)">Family</span>
+                    <h3 class="h5 mt-2">Divorce Without Fear: What to Expect</h3>
+                    <p class="small text-muted mb-3">The paperwork, timelines and costs of a mutual-consent divorce explained.</p>
+                    <a class="card-link" href="blog-details.html?post=divorce-guide">Read guide <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 reveal" data-filter-item="rights">
+                <article class="card-neu blog-card h-100">
+                  <div class="card-thumb"><img src="assets/images/blog-police.jpg" alt="Shield with gavel illustration" style="object-position:0% 20%"></div>
+                  <div class="card-body-neu">
+                    <span class="badge" style="background:var(--accent-soft);color:var(--accent)">Know Your Rights</span>
+                    <h3 class="h5 mt-2">Police Questioning &amp; Your Rights</h3>
+                    <p class="small text-muted mb-3">What to do if you're questioned, detained or served notice — your basics.</p>
+                    <a class="card-link" href="blog-details.html?post=police-rights">Read guide <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 reveal reveal-delay-1" data-filter-item="property">
+                <article class="card-neu blog-card h-100">
+                  <div class="card-thumb"><img src="assets/images/blog-title.jpg" alt="Property title document with checkmark"></div>
+                  <div class="card-body-neu">
+                    <span class="badge" style="background:var(--accent-soft);color:var(--accent)">Property</span>
+                    <h3 class="h5 mt-2">Buying a Home? Verify the Title First</h3>
+                    <p class="small text-muted mb-3">A 5-step title check that prevents expensive property disputes later.</p>
+                    <a class="card-link" href="blog-details.html?post=title-check">Read guide <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 reveal" data-filter-item="rights">
+                <article class="card-neu blog-card h-100">
+                  <div class="card-thumb"><img src="assets/images/blog-consumer.jpg" alt="Receipt with plus and document illustration"></div>
+                  <div class="card-body-neu">
+                    <span class="badge" style="background:var(--accent-soft);color:var(--accent)">Know Your Rights</span>
+                    <h3 class="h5 mt-2">Consumer Rights: Refunds &amp; Warranties</h3>
+                    <p class="small text-muted mb-3">When you're owed a refund and how to file a consumer complaint.</p>
+                    <a class="card-link" href="blog-details.html?post=consumer-rights">Read guide <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6 reveal reveal-delay-1" data-filter-item="news">
+                <article class="card-neu blog-card h-100">
+                  <div class="card-thumb"><img src="assets/images/blog-efiling.jpg" alt="Online e-filing documents with upload arrow"></div>
+                  <div class="card-body-neu">
+                    <span class="badge" style="background:var(--accent-soft);color:var(--accent)">Legal News</span>
+                    <h3 class="h5 mt-2">New E-Filing Rules: What They Mean for You</h3>
+                    <p class="small text-muted mb-3">How the shift to digital filing changes timelines and court practice.</p>
+                    <a class="card-link" href="blog-details.html?post=e-filing">Read guide <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="sidebar-sticky">
+              <aside class="card-neu p-4 reveal">
+                <h3 class="h5 mb-3"><i class="fa-solid fa-magnifying-glass me-2" style="color:var(--accent)"></i>Search guides</h3>
+                <input class="field" type="search" id="blogSearch" placeholder="Search articles…" aria-label="Search articles">
+              </aside>
+              <aside class="card-neu p-4 reveal">
+                <h3 class="h5 mb-3"><i class="fa-solid fa-folder-open me-2" style="color:var(--accent)"></i>Categories</h3>
+                <ul class="list-unstyled small mb-0">
+                  <li class="mb-2"><a href="blog.html?cat=rights"><i class="fa-solid fa-book-open me-2"></i>Know Your Rights <span class="text-muted">(3)</span></a></li>
+                  <li class="mb-2"><a href="blog.html?cat=family"><i class="fa-solid fa-scale-balanced me-2"></i>Family <span class="text-muted">(1)</span></a></li>
+                  <li class="mb-2"><a href="blog.html?cat=property"><i class="fa-solid fa-building-columns me-2"></i>Property <span class="text-muted">(1)</span></a></li>
+                  <li class="mb-0"><a href="blog.html?cat=news"><i class="fa-solid fa-newspaper me-2"></i>Legal News <span class="text-muted">(1)</span></a></li>
+                </ul>
+              </aside>
+              <aside class="card-neu p-4 reveal" style="background:var(--accent-soft)">
+                <h3 class="h5 mb-2" style="color:var(--accent)"><i class="fa-solid fa-life-ring me-2"></i>Need urgent help?</h3>
+                <p class="small text-muted mb-3">Our specialists respond to case enquiries within 48 hours.</p>
+                <a class="btn btn-accent btn-sm w-100" href="contact.html#enquiry"><i class="fa-solid fa-file-lines"></i> Submit Case Enquiry</a>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Request a guide -->
+    <section class="section" aria-label="Request a legal guide">
+      <div class="container">
+        <div class="card-neu neu-lg reveal" style="padding:40px 24px">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <span class="sec-eyebrow"><i class="fa-solid fa-lightbulb"></i> Can't find a guide?</span>
+              <h2 class="h3 mb-2">Request a topic we haven't covered yet</h2>
+              <p class="text-muted mb-0">Tell us the legal question you need answered in plain language. Popular requests
+                become our next free guide.</p>
+            </div>
+            <div class="col-lg-6">
+              <form data-newsletter aria-label="Request a guide" novalidate>
+                <div class="input-group-wrap d-flex align-items-center gap-2" style="flex-wrap:wrap">
+                  <input class="field" type="email" placeholder="your@email.com" aria-label="Email address" required style="flex:1;min-width:200px">
+                  <button class="btn btn-accent" type="submit"><i class="fa-solid fa-envelope"></i> Suggest a topic</button>
+                </div>
+                <p class="news-ok text-muted small mt-2 mb-0" style="display:none">Thanks! We'll notify you when the guide is published.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog FAQ -->
+    <section class="section bg-soft" aria-label="Blog FAQ">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-eyebrow"><i class="fa-solid fa-circle-question"></i> FAQ</span>
+          <h2>Reading our guides — quick answers</h2>
+          <p>How to use the blog and resources section, answered simply.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 reveal">
+            <div class="accordion accordion-gh" id="blogFaq">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bfaq1" aria-expanded="true">
+                    Is the information on guides legally reliable?
+                  </button>
+                </h3>
+                <div id="bfaq1" class="accordion-collapse collapse show" data-bs-parent="#blogFaq">
+                  <div class="accordion-body">Guides are written by the JustiAid team and reviewed by advocates. They
+                    explain rights in plain language, but they are general information — not legal advice. For your
+                    specific case, ask a specialist directly.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bfaq2">
+                    How do I find a guide on my situation?
+                  </button>
+                </h3>
+                <div id="bfaq2" class="accordion-collapse collapse" data-bs-parent="#blogFaq">
+                  <div class="accordion-body">Use the search box or filter by category on the left. If you can't find a
+                    topic, use the "Request a guide" box above and we'll add it to our publishing plan.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bfaq3">
+                    Are guides free to read?
+                  </button>
+                </h3>
+                <div id="bfaq3" class="accordion-collapse collapse" data-bs-parent="#blogFaq">
+                  <div class="accordion-body">Yes — every guide on the blog and the Know Your Rights page is completely
+                    free. No subscription, no paywall, just clear legal information for everyone.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bfaq4">
+                    How often are new guides published?
+                  </button>
+                </h3>
+                <div id="bfaq4" class="accordion-collapse collapse" data-bs-parent="#blogFaq">
+                  <div class="accordion-body">We publish new guides and legal news every few weeks, focusing on the topics
+                    clients ask about most. Subscribe below to hear first.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bfaq5">
+                    Can I share a guide with someone?
+                  </button>
+                </h3>
+                <div id="bfaq5" class="accordion-collapse collapse" data-bs-parent="#blogFaq">
+                  <div class="accordion-body">Absolutely — that's what they're for. Share the link freely. A quick note is
+                    appreciated but never required.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a class="btn btn-accent btn-lg" href="advocate-directory.html"><i class="fa-solid fa-user-tie"></i> Find an advocate for your matter</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Areas | JustiAid</title>
+  <meta name="description"
+    content="Explore JustiAid's practice areas: family law, property law, criminal defense, corporate law, consumer rights and legal consultation.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) { }
+      if (!t) t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-page="services">
+  <div class="aurora-bg" aria-hidden="true">
+    <span class="wave w1"></span>
+    <span class="wave w2"></span>
+    <span class="wave w3"></span>
+    <span class="wave w4"></span>
+  </div>
+
+  <div id="preloader" aria-hidden="true">
+    <img class="preloader-paw" src="assets/images/logo.svg" alt="Loading">
+  </div>
+
+  <div id="navbar"></div>
+
+  <main>
+    <!-- Page header -->
+    <section class="page-header" aria-label="Practice areas" style="background:linear-gradient(rgba(var(--bg-rgb),.7),rgba(var(--bg-rgb),.7)),url('assets/images/pexels-introspectivedsgn-9367109.jpg') center/cover no-repeat">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7 text-lg-start">
+            <span class="sec-eyebrow reveal"><i class="fa-solid fa-gavel"></i> Practice areas</span>
+            <h1 class="reveal">Legal help, area by area</h1>
+            <p class="text-muted reveal reveal-delay-1" style="max-width:520px">From family disputes to corporate
+              contracts, our advocates cover the matters that matter most to your life and business.</p>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb reveal justify-content-center justify-content-lg-start">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Practice Areas</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block reveal">
+            <div class="neu" style="padding:14px;max-width:440px;margin-inline:auto">
+              <img src="assets/images/pexels-introspectivedsgn-9367109.jpg" alt="Practice areas illustration"
+                style="width:100%;border-radius:calc(var(--r-md) - 8px)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice area cards -->
+    <section class="section pt-2" aria-label="List of practice areas">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <a class="card-neu service-card h-100" href="service-details.html?service=family-law">
+              <span class="icon-box"><i class="fa-solid fa-scale-balanced"></i></span>
+              <h3>Family Law</h3>
+              <p>Divorce, custody, alimony, mutual consent and family settlements handled with care and discretion.</p>
+              <ul class="list-unstyled small text-muted mb-3">
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Divorce &amp; separation</li>
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Child custody &amp; visitation</li>
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Maintenance &amp; alimony</li>
+              </ul>
+              <span class="card-link mt-auto">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+            <a class="card-neu service-card h-100" href="service-details.html?service=property-law">
+              <span class="icon-box"><i class="fa-solid fa-building-columns"></i></span>
+              <h3>Property Law</h3>
+              <p>Title verification, sale agreements, encroachments, tenancy and registration made dispute-free.</p>
+              <ul class="list-unstyled small text-muted mb-3">
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Title verification</li>
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Sale &amp; lease agreements</li>
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Property disputes</li>
+              </ul>
+              <span class="card-link mt-auto">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+            <a class="card-neu service-card h-100" href="service-details.html?service=criminal-defense">
+              <span class="icon-box"><i class="fa-solid fa-shield-halved"></i></span>
+              <h3>Criminal Defense</h3>
+              <p>Bail, trial representation, quashing of FIRs and honest advice on the road ahead.</p>
+              <ul class="list-unstyled small text-muted mb-3">
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Bail applications</li>
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Trial representation</li>
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Quashing of FIR</li>
+              </ul>
+              <span class="card-link mt-auto">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <a class="card-neu service-card h-100" href="service-details.html?service=corporate-law">
+              <span class="icon-box"><i class="fa-solid fa-briefcase"></i></span>
+              <h3>Corporate Law</h3>
+              <p>Incorporation, contracts, compliance and dispute resolution built for growing businesses.</p>
+              <ul class="list-unstyled small text-muted mb-3">
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Company incorporation</li>
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Contracts &amp; agreements</li>
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Compliance &amp; IP</li>
+              </ul>
+              <span class="card-link mt-auto">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+            <a class="card-neu service-card h-100" href="service-details.html?service=consumer-rights">
+              <span class="icon-box"><i class="fa-solid fa-box-open"></i></span>
+              <h3>Consumer Rights</h3>
+              <p>Defective products, deficient services and unfair trade practices — draft your complaint with us.</p>
+              <ul class="list-unstyled small text-muted mb-3">
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Consumer complaints</li>
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Refund &amp; warranty claims</li>
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Unfair practice claims</li>
+              </ul>
+              <span class="card-link mt-auto">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+            <a class="card-neu service-card h-100" href="contact.html#enquiry">
+              <span class="icon-box"><i class="fa-solid fa-comments"></i></span>
+              <h3>Legal Consultation</h3>
+              <p>A confidential first conversation with a specialist to understand your options and next steps.</p>
+              <ul class="list-unstyled small text-muted mb-3">
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Case evaluation</li>
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Document review</li>
+                <li><i class="fa-solid fa-check me-2" style="color:var(--teal)"></i>Next-step planning</li>
+              </ul>
+              <span class="card-link mt-auto">Book consultation <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Which area fits? -->
+    <section class="section" aria-label="Which practice area fits your matter">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-eyebrow"><i class="fa-solid fa-compass"></i> Quick guide</span>
+          <h2>Which practice area fits your matter?</h2>
+          <p>Not sure where your case belongs? A quick look at the situations each area covers will help.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal">
+            <a class="card-neu h-100" style="padding:26px 22px;text-decoration:none;display:flex;flex-direction:column" href="service-details.html?service=family-law">
+              <span class="icon-box mb-3"><i class="fa-solid fa-scale-balanced"></i></span>
+              <h3 class="h6 mb-2">Family Law fits if…</h3>
+              <ul class="list-unstyled small text-muted mb-3">
+                <li class="mb-1"><i class="fa-solid fa-arrow-right me-2" style="color:var(--accent)"></i>Marriage, divorce or separation</li>
+                <li class="mb-1"><i class="fa-solid fa-arrow-right me-2" style="color:var(--accent)"></i>Custody of children</li>
+                <li class="mb-0"><i class="fa-solid fa-arrow-right me-2" style="color:var(--accent)"></i>Maintenance agreements</li>
+              </ul>
+              <span class="card-link mt-auto">Family Law <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+            <a class="card-neu h-100" style="padding:26px 22px;text-decoration:none;display:flex;flex-direction:column" href="service-details.html?service=property-law">
+              <span class="icon-box mb-3"><i class="fa-solid fa-building-columns"></i></span>
+              <h3 class="h6 mb-2">Property Law fits if…</h3>
+              <ul class="list-unstyled small text-muted mb-3">
+                <li class="mb-1"><i class="fa-solid fa-arrow-right me-2" style="color:var(--accent)"></i>Buying or selling property</li>
+                <li class="mb-1"><i class="fa-solid fa-arrow-right me-2" style="color:var(--accent)"></i>Title or boundary disputes</li>
+                <li class="mb-0"><i class="fa-solid fa-arrow-right me-2" style="color:var(--accent)"></i>Tenancy or lease issues</li>
+              </ul>
+              <span class="card-link mt-auto">Property Law <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+            <a class="card-neu h-100" style="padding:26px 22px;text-decoration:none;display:flex;flex-direction:column" href="service-details.html?service=criminal-defense">
+              <span class="icon-box mb-3"><i class="fa-solid fa-shield-halved"></i></span>
+              <h3 class="h6 mb-2">Criminal Defense fits if…</h3>
+              <ul class="list-unstyled small text-muted mb-3">
+                <li class="mb-1"><i class="fa-solid fa-arrow-right me-2" style="color:var(--accent)"></i>FIR lodged against you</li>
+                <li class="mb-1"><i class="fa-solid fa-arrow-right me-2" style="color:var(--accent)"></i>Police questioning or custody</li>
+                <li class="mb-0"><i class="fa-solid fa-arrow-right me-2" style="color:var(--accent)"></i>Bail needed urgently</li>
+              </ul>
+              <span class="card-link mt-auto">Criminal Defense <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+            <a class="card-neu h-100" style="padding:26px 22px;text-decoration:none;display:flex;flex-direction:column" href="service-details.html?service=corporate-law">
+              <span class="icon-box mb-3"><i class="fa-solid fa-briefcase"></i></span>
+              <h3 class="h6 mb-2">Corporate Law fits if…</h3>
+              <ul class="list-unstyled small text-muted mb-3">
+                <li class="mb-1"><i class="fa-solid fa-arrow-right me-2" style="color:var(--accent)"></i>Starting or registering a company</li>
+                <li class="mb-1"><i class="fa-solid fa-arrow-right me-2" style="color:var(--accent)"></i>Contracts and agreements</li>
+                <li class="mb-0"><i class="fa-solid fa-arrow-right me-2" style="color:var(--accent)"></i>Compliance or IP protection</li>
+              </ul>
+              <span class="card-link mt-auto">Corporate Law <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice area FAQ -->
+    <section class="section bg-soft" aria-label="Practice area FAQ">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-eyebrow"><i class="fa-solid fa-circle-question"></i> FAQ</span>
+          <h2>Practice areas — quick answers</h2>
+          <p>Short answers to the questions clients ask us most before booking.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 reveal">
+            <div class="accordion accordion-gh" id="practiceFaq">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#paq1" aria-expanded="true">
+                    Which practice area do I need?
+                  </button>
+                </h3>
+                <div id="paq1" class="accordion-collapse collapse show" data-bs-parent="#practiceFaq">
+                  <div class="accordion-body">Think about the problem's subject: marriage and children â†’ family; land and
+                    buildings â†’ property; accusations or police matters â†’ criminal; business and contracts â†’ corporate.
+                    Unsure? Send a case enquiry and we'll route it for you.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paq2">
+                    My matter spans two areas. What then?
+                  </button>
+                </h3>
+                <div id="paq2" class="accordion-collapse collapse" data-bs-parent="#practiceFaq">
+                  <div class="accordion-body">Not a problem. Many cases touch more than one field — for example a business
+                    divorce. We'll match you with an advocate who covers both areas or coordinate a small team for you.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paq3">
+                    Do you handle every legal matter?
+                  </button>
+                </h3>
+                <div id="paq3" class="accordion-collapse collapse" data-bs-parent="#practiceFaq">
+                  <div class="accordion-body">Our directory covers family, property, criminal, corporate, consumer and
+                    general consultation. If your matter is outside those, tell us anyway — we can often refer you to a
+                    specialist colleague.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paq4">
+                    Is an initial consultation really free?
+                  </button>
+                </h3>
+                <div id="paq4" class="accordion-collapse collapse" data-bs-parent="#practiceFaq">
+                  <div class="accordion-body">Yes. New clients receive a free case review to identify the right area and
+                    shortlist suitable advocates. You only pay if you book a consultation or engage an advocate.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paq5">
+                    How do I book a consultation for my area?
+                  </button>
+                </h3>
+                <div id="paq5" class="accordion-collapse collapse" data-bs-parent="#practiceFaq">
+                  <div class="accordion-body">Open the relevant practice area, choose an advocate from the directory or
+                    submit an enquiry, and pick phone, video or in-office. You'll get a confirmation with the fee up front.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a class="btn btn-accent btn-lg" href="contact.html#enquiry"><i class="fa-solid fa-file-lines"></i> Get a free matching</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section bg-soft" aria-label="Call to action">
+      <div class="container">
+        <div class="card-neu neu-lg text-center" style="padding:56px 24px">
+          <span class="sec-eyebrow"><i class="fa-solid fa-scale-balanced"></i> Not sure which area fits?</span>
+          <h2 class="mb-3">Describe your matter — we'll point you the right way</h2>
+          <p class="text-muted mb-4" style="max-width:560px;margin-inline:auto">Send a confidential summary and a legal
+            specialist will assess it, free of charge.</p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center">
+            <a class="btn btn-accent btn-lg" href="contact.html#enquiry"><i class="fa-solid fa-file-lines"></i> Free Case Review</a>
+            <a class="btn btn-ghost btn-lg" href="advocate-directory.html"><i class="fa-solid fa-user-tie"></i> Find an Advocate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

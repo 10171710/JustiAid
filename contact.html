@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us &amp; Case Enquiry | JustiAid</title>
+  <meta name="description" content="Get in touch with JustiAid. Submit a confidential case enquiry, visit our office, call us or drop a message.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="contact">
+  <div class="aurora-bg" aria-hidden="true">
+    <span class="wave w1"></span>
+    <span class="wave w2"></span>
+    <span class="wave w3"></span>
+    <span class="wave w4"></span>
+  </div>
+
+  <div id="preloader" aria-hidden="true">
+    <img class="preloader-paw" src="assets/images/logo.svg" alt="Loading">
+  </div>
+
+  <div id="navbar"></div>
+
+  <main>
+    <!-- Page header -->
+    <section class="page-header" aria-label="Contact us" style="background:linear-gradient(rgba(var(--bg-rgb),.7),rgba(var(--bg-rgb),.7)),url('assets/images/ChatGPT%20Image%20Sep%208,%202026,%2001_37_41%20PM.png') center/cover no-repeat">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7 text-lg-start">
+            <span class="sec-eyebrow"><i class="fa-solid fa-envelope-open-text"></i> Contact</span>
+            <h1>Tell us about your matter</h1>
+            <p style="max-width:520px;color:#444">Submit a confidential case enquiry and a
+              legal specialist will assess it free of charge — usually within 48 hours.</p>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center justify-content-lg-start" style="color:#444">
+                <li class="breadcrumb-item"><a href="index.html" style="color:#444">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block reveal">
+            <div class="neu" style="padding:14px;max-width:440px;margin-inline:auto">
+              <img src="assets/images/ChatGPT%20Image%20Sep%208,%202026,%2001_37_41%20PM.png" alt="Legal help illustration"
+                style="width:100%;border-radius:calc(var(--r-md) - 8px)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info cards -->
+    <section class="section pt-2" aria-label="Contact information">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="card-neu h-100 text-center" style="padding:30px 22px">
+              <span class="icon-box mx-auto mb-3"><i class="fa-solid fa-phone"></i></span>
+              <h3 class="h6 mb-1">Call us</h3>
+              <p class="small text-muted mb-0"><a href="tel:+15550142233" class="contact-link"><i class="fa-solid fa-phone me-1"></i>+1 (555) 014-2233</a><br>Mon–Sat, 9am–7pm</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+            <div class="card-neu h-100 text-center" style="padding:30px 22px">
+              <span class="icon-box mx-auto mb-3"><i class="fa-solid fa-envelope"></i></span>
+              <h3 class="h6 mb-1">Write to us</h3>
+              <p class="small text-muted mb-0"><a href="mailto:help@justiaid.com" class="contact-link"><i class="fa-solid fa-envelope me-1"></i>help@justiaid.com</a><br>We reply within 1 business day</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+            <div class="card-neu h-100 text-center" style="padding:30px 22px">
+              <span class="icon-box mx-auto mb-3"><i class="fa-solid fa-location-dot"></i></span>
+              <h3 class="h6 mb-1">Visit us</h3>
+              <p class="small text-muted mb-0">12 Justice Row, District Court Rd, Austin</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+            <div class="card-neu h-100 text-center" style="padding:30px 22px">
+              <span class="icon-box mx-auto mb-3"><i class="fa-solid fa-shield-halved"></i></span>
+              <h3 class="h6 mb-1">Confidential</h3>
+              <p class="small text-muted mb-0">Your case details are never shared without consent.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case enquiry form -->
+    <section class="section bg-soft pt-4" id="enquiry" aria-label="Case enquiry form">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5 reveal">
+            <span class="sec-eyebrow"><i class="fa-solid fa-file-lines"></i> Case enquiry</span>
+            <h2 class="mb-3">Request a free case review</h2>
+            <p class="text-muted">Share a brief summary of your legal matter. A specialist will assess it and get back to
+              you within 48 hours with recommended next steps — free and with no obligation.</p>
+            <ul class="list-unstyled small text-muted">
+              <li class="mb-2"><i class="fa-solid fa-circle-check me-2" style="color:var(--teal)"></i>Free assessment</li>
+              <li class="mb-2"><i class="fa-solid fa-circle-check me-2" style="color:var(--teal)"></i>48-hour response</li>
+              <li class="mb-2"><i class="fa-solid fa-circle-check me-2" style="color:var(--teal)"></i>Strictly confidential</li>
+            </ul>
+            <div class="neu-flat p-3 mt-3">
+              <p class="small text-muted mb-0"><b style="color:var(--heading)">Urgent?</b> If matter requires immediate
+                help, call us <a href="tel:+15550142233" class="contact-link"><b>+1 (555) 014-2233</b></a></p>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <form class="card-neu p-4 p-lg-5" data-validate novalidate>
+              <div class="alert d-none" id="formMsg" role="alert"></div>
+              <div class="alert alert-success d-none mb-3 text-center" id="formDone" role="alert">
+                <span class="form-done-tick"><i class="fa-solid fa-circle-check"></i></span>
+                <strong>Enquiry submitted successfully!</strong><br>
+                <span class="small">Thank you — a specialist will contact you within 48 hours.</span>
+              </div>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold" for="ct-name">Full name *</label>
+                  <input class="field" type="text" id="ct-name" name="name" placeholder="Your name" required>
+                  <span class="is-invalid-msg">Please enter your full name.</span>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold" for="ct-email">Email address *</label>
+                  <input class="field" type="email" id="ct-email" name="email" placeholder="you@example.com" required>
+                  <span class="is-invalid-msg">Please enter a valid email address.</span>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold" for="ct-phone">Phone number (10 digits) *</label>
+                  <input class="field" type="tel" id="ct-phone" name="phone" placeholder="e.g. 5550001234" required
+                    pattern="[0-9]{10}" inputmode="numeric" maxlength="10"
+                    title="Please enter your 10-digit phone number">
+                  <span class="is-invalid-msg">Phone must be exactly 10 digits.</span>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold" for="ct-area">Practice area *</label>
+                  <select class="field" id="ct-area" name="area" required>
+                    <option value="" selected disabled>Select a practice area</option>
+                    <option value="family">Family Law</option>
+                    <option value="property">Property Law</option>
+                    <option value="criminal">Criminal Defense</option>
+                    <option value="corporate">Corporate Law</option>
+                    <option value="consumer">Consumer Rights</option>
+                    <option value="other">Other / Not sure</option>
+                  </select>
+                  <span class="is-invalid-msg">Please select a practice area.</span>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-bold" for="ct-message">Brief description of your matter *</label>
+                  <textarea class="field" id="ct-message" name="message" rows="5"
+                    placeholder="Please summarise what happened, who is involved and what outcome you're hoping for."
+                    required></textarea>
+                  <span class="is-invalid-msg">Please describe your legal matter.</span>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="ct-consent" required>
+                    <label class="form-check-label small text-muted" for="ct-consent">
+                      I consent to JustiAid contacting me about this enquiry and understand my details are kept confidential.
+                    </label>
+                  </div>
+                  <span class="is-invalid-msg">You must tick the consent box to submit.</span>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-accent btn-lg" type="submit"><i class="fa-solid fa-paper-plane"></i> Submit Case Enquiry</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JustiAid — Legal Aid &amp; Advocate Referral Service | Home Page 1</title>
+  <meta name="description"
+    content="JustiAid legal aid template. Personalised legal assistance, vetted advocate referrals, family, property, criminal and corporate law. Neumorphic, responsive, RTL-ready HTML template.">
+  <meta name="keywords" content="legal template, advocate referral, law firm, lawyer directory, legal aid, HTML template">
+  <meta property="og:title" content="JustiAid — Legal Aid & Advocate Referral Template">
+  <meta property="og:description"
+    content="A modern multipurpose template for legal aid and advocate referral services. Light & dark, RTL-ready, fully responsive.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) { }
+      if (!t) t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <!--
+    RTL support: add dir="rtl" and the matching language code, e.g.
+    <html lang="ar" dir="rtl">  — all pages are fully RTL-compatible.
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-page="home-1">
+
+  <div class="aurora-bg" aria-hidden="true">
+    <span class="wave w1"></span>
+    <span class="wave w2"></span>
+    <span class="wave w3"></span>
+    <span class="wave w4"></span>
+  </div>
+
+  <div id="preloader" aria-hidden="true">
+    <img class="preloader-paw" src="assets/images/logo.svg" alt="Loading">
+  </div>
+
+  <div id="navbar"></div>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-label="Welcome to JustiAid">
+      <div class="paws-bg" aria-hidden="true">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+      </div>
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-copy reveal">
+            <span class="hero-eyebrow"><i class="fa-solid fa-scale-balanced"></i> Trusted by 4,200+ clients</span>
+            <h1>Clear legal help, <span class="grad">honest advocates</span> — one referral away</h1>
+            <p class="hero-lead">JustiAid is a legal aid and advocate referral service. Understand your rights, find a
+              vetted lawyer in your area of need and take the next step with confidence — family, property, criminal or
+              corporate matters.</p>
+            <div class="hero-cta">
+              <a class="btn btn-accent btn-lg" href="contact.html#enquiry"><i class="fa-solid fa-file-lines"></i> Free
+                Case Review</a>
+              <a class="btn btn-ghost btn-lg" href="advocate-directory.html"><i class="fa-solid fa-user-tie"></i> Find an
+                Advocate</a>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat"><b><span data-count="4.2" data-suffix="k+">0</span></b><span>Cases
+                  referred<br>successfully</span></div>
+              <div class="hero-stat"><b><span data-count="98" data-suffix="%">0</span></b><span>Recommendation<br>rate
+                  from clients</span></div>
+              <div class="hero-stat"><b><span data-count="15" data-suffix="+">0</span></b><span>Years of<br>legal
+                  experience</span></div>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="neu">
+              <img src="assets/images/hero-justice.jpg" alt="Illustration of the scales of justice, gavel and law books">
+            </div>
+            <div class="hero-float-wrap">
+              <div class="hero-float f1">
+                <span class="f-ico"><i class="fa-solid fa-shield-halved"></i></span>
+                <span><b>Vetted advocates</b><small>Verified credentials always</small></span>
+              </div>
+              <div class="hero-float f2">
+                <span class="f-ico"><i class="fa-solid fa-bolt"></i></span>
+                <span><b>Matched in 24h</b><small><a href="tel:+15550142233" class="contact-link">Call +1 (555) 014-2233</a></small></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRACTICE AREAS ================= -->
+    <section class="section bg-soft" aria-label="Practice areas">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-eyebrow"><i class="fa-solid fa-gavel"></i> What we cover</span>
+          <h2>Practice areas we specialise in</h2>
+          <p>From family disputes to corporate contracts, our advocates cover the matters that matter most to your life
+            and business.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <a class="card-neu service-card" href="service-details.html?service=family-law">
+              <span class="icon-box"><i class="fa-solid fa-scale-balanced"></i></span>
+              <h3>Family Law</h3>
+              <p>Divorce, custody, alimony and mutual consent. Sensitive guidance when families need it most.</p>
+              <span class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+            <a class="card-neu service-card" href="service-details.html?service=property-law">
+              <span class="icon-box"><i class="fa-solid fa-building-columns"></i></span>
+              <h3>Property Law</h3>
+              <p>Title verification, sale agreements, encroachments and registration made clear and dispute-free.</p>
+              <span class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+            <a class="card-neu service-card" href="service-details.html?service=criminal-defense">
+              <span class="icon-box"><i class="fa-solid fa-shield-halved"></i></span>
+              <h3>Criminal Defense</h3>
+              <p>Bail, trial representation, quashing of FIRs and honest advice on the road ahead.</p>
+              <span class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <a class="card-neu service-card" href="service-details.html?service=corporate-law">
+              <span class="icon-box"><i class="fa-solid fa-briefcase"></i></span>
+              <h3>Corporate Law</h3>
+              <p>Incorporation, contracts, compliance and dispute resolution built for growing businesses.</p>
+              <span class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+            <a class="card-neu service-card" href="service-details.html?service=consumer-rights">
+              <span class="icon-box"><i class="fa-solid fa-box-open"></i></span>
+              <h3>Consumer Rights</h3>
+              <p>Defective products, deficient services and unfair trade practices — draft your complaint with us.</p>
+              <span class="card-link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+            <a class="card-neu service-card" href="contact.html#enquiry">
+              <span class="icon-box"><i class="fa-solid fa-comments"></i></span>
+              <h3>Legal Consultation</h3>
+              <p>A confidential first conversation with a specialist to understand your options and next steps.</p>
+              <span class="card-link">Book consultation <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="section" aria-label="Why choose JustiAid">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal">
+            <div class="neu" style="padding:18px">
+              <img src="assets/images/pexels-towfiqu-barbhuiya-3440682-8693379.jpg" alt="Legal consultation with an advocate"
+                style="border-radius:calc(var(--r-md) - 8px)">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="sec-head left reveal">
+              <span class="sec-eyebrow"><i class="fa-solid fa-handshake"></i> Why JustiAid</span>
+              <h2>Legal guidance that treats you like a person, not a case file</h2>
+              <p>We built JustiAid around one idea: legal help should be understandable, affordable and honest. Verified
+                advocates, transparent fees and plain-language advice at every step.</p>
+            </div>
+            <div class="row g-3">
+              <div class="col-sm-6 reveal">
+                <div class="neu-flat p-3 h-100">
+                  <h3 class="h6 mb-2 icon-flip-end"><i class="fa-solid fa-certificate text-warning me-2"></i>Verified advocates</h3>
+                  <p class="small text-muted mb-0">Every advocate's bar registration and credentials are verified before
+                    they join our roster.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 reveal reveal-delay-1">
+                <div class="neu-flat p-3 h-100">
+                  <h3 class="h6 mb-2 icon-flip-end"><i class="fa-solid fa-lock me-2" style="color:var(--teal)"></i>Confidential by
+                    design</h3>
+                  <p class="small text-muted mb-0">Your case details are shared only with the advocate you choose, and
+                    never elsewhere.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 reveal">
+                <div class="neu-flat p-3 h-100">
+                  <h3 class="h6 mb-2 icon-flip-end"><i class="fa-solid fa-rotate me-2" style="color:var(--accent-2)"></i>Transparent
+                    fees</h3>
+                  <p class="small text-muted mb-0">Consultation costs and retainer ranges are clear up front — no hidden
+                    surprises.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 reveal reveal-delay-1">
+                <div class="neu-flat p-3 h-100">
+                  <h3 class="h6 mb-2 icon-flip-end"><i class="fa-solid fa-bolt me-2" style="color:var(--accent)"></i>48-hour matching
+                  </h3>
+                  <p class="small text-muted mb-0">We match you with a specialist advocate within 48 hours of your case
+                    enquiry.</p>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-accent mt-4 reveal" href="about.html"><i class="fa-solid fa-users"></i> Meet Our Team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="section bg-soft" aria-label="How the referral process works">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-eyebrow"><i class="fa-solid fa-route"></i> How it works</span>
+          <h2>From enquiry to advocate in 4 easy steps</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="card-neu step-card">
+              <span class="step-num">1</span>
+              <h3>Share your case</h3>
+              <p>Send us a short, confidential summary of your legal matter using the case enquiry form.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+            <div class="card-neu step-card">
+              <span class="step-num">2</span>
+              <h3>Free assessment</h3>
+              <p>Our team reviews your query and pinpoints the right practice area and level of seniority.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+            <div class="card-neu step-card">
+              <span class="step-num">3</span>
+              <h3>Match &amp; consult</h3>
+              <p>We introduce you to a vetted advocate. Book a consultation and understand your options.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+            <div class="card-neu step-card">
+              <span class="step-num">4</span>
+              <h3>Move forward</h3>
+              <p>You decide whether to engage the advocate. We stay in touch to make sure things go smoothly.</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+          <a class="btn btn-accent btn-lg" href="contact.html#enquiry"><i class="fa-solid fa-paper-plane"></i> Start Your
+            Enquiry</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHO WE HELP ================= -->
+    <section class="section" aria-label="Who we help">
+      <div class="container">
+        <a class="sec-head reveal d-block" href="contact.html#enquiry" style="text-decoration:none">
+          <span class="sec-eyebrow"><i class="fa-solid fa-people-group"></i> Who we help</span>
+          <h2>Legal support for every walk of life</h2>
+          <p>From first-home buyers to growing startups, we connect you with the right advocate for exactly what you are
+            facing — no matter how big or small the matter.</p>
+          <span class="card-link"><i class="fa-solid fa-comment-dots"></i> Start a conversation</span>
+        </a>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <a class="card-neu h-100 d-flex flex-column" href="contact.html#enquiry" style="padding:28px 24px;text-decoration:none">
+              <span class="icon-box mb-3"><i class="fa-solid fa-user"></i></span>
+              <h3 class="h6 mb-2">Individuals &amp; families</h3>
+              <p class="small text-muted mb-3">Divorce, custody, will drafting and personal legal queries — handled with
+                care and total confidentiality.</p>
+              <span class="card-link mt-auto">Family guidance <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+            <a class="card-neu h-100 d-flex flex-column" href="contact.html#enquiry" style="padding:28px 24px;text-decoration:none">
+              <span class="icon-box mb-3"><i class="fa-solid fa-house-user"></i></span>
+              <h3 class="h6 mb-2">Property owners &amp; tenants</h3>
+              <p class="small text-muted mb-3">Deposit disputes, title verification, lease agreements and encroachment
+                issues — resolved without jargon.</p>
+              <span class="card-link mt-auto">Property support <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+            <a class="card-neu h-100 d-flex flex-column" href="contact.html#enquiry" style="padding:28px 24px;text-decoration:none">
+              <span class="icon-box mb-3"><i class="fa-solid fa-shield"></i></span>
+              <h3 class="h6 mb-2">Those facing criminal charges</h3>
+              <p class="small text-muted mb-3">FIRs, bail applications, police questioning and trial representation —
+                clear guidance when it counts most.</p>
+              <span class="card-link mt-auto">Criminal support <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <a class="card-neu h-100 d-flex flex-column" href="contact.html#enquiry" style="padding:28px 24px;text-decoration:none">
+              <span class="icon-box mb-3"><i class="fa-solid fa-briefcase"></i></span>
+              <h3 class="h6 mb-2">Small businesses &amp; startups</h3>
+              <p class="small text-muted mb-3">Incorporation, shareholder agreements, contracts and compliance built for
+                where your business is today.</p>
+              <span class="card-link mt-auto">Business support <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+            <a class="card-neu h-100 d-flex flex-column" href="contact.html#enquiry" style="padding:28px 24px;text-decoration:none">
+              <span class="icon-box mb-3"><i class="fa-solid fa-cart-shopping"></i></span>
+              <h3 class="h6 mb-2">Consumers</h3>
+              <p class="small text-muted mb-3">Defective products, deficient services and unfair trade practices — get a
+                complaint drafted and on record.</p>
+              <span class="card-link mt-auto">Consumer help <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+            <a class="card-neu h-100 d-flex flex-column" href="contact.html#enquiry" style="padding:28px 24px;text-decoration:none">
+              <span class="icon-box mb-3"><i class="fa-solid fa-people-arrows"></i></span>
+              <h3 class="h6 mb-2">Drivers &amp; accident victims</h3>
+              <p class="small text-muted mb-3">Accident claims, challans, insurance disputes and compensation — know
+                entitlements, enforce them.</p>
+              <span class="card-link mt-auto">Ask a specialist <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a class="btn btn-ghost btn-lg" href="advocate-directory.html"><i class="fa-solid fa-user-tie"></i> Browse the Advocate Directory</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section" aria-label="Testimonials">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-eyebrow"><i class="fa-solid fa-quote-left"></i> Client stories</span>
+          <h2>What clients say about JustiAid</h2>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-4 justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                  <div class="card-neu t-card text-center">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Going through a divorce felt overwhelming. JustiAid helped me find a family-law advocate
+                      who understood everything. The process finally felt manageable."</blockquote>
+                    <div class="t-user justify-content-center">
+                      <span><b>Priya Sharma</b><small>Family Law Consultation</small></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                  <div class="card-neu t-card text-center">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"The property advocate I was referred to caught an encumbrance no one else noticed. That
+                      alone saved me thousands. Worth every penny."</blockquote>
+                    <div class="t-user justify-content-center">
+                      <span><b>Marcus Lee</b><small>Property Law Matter</small></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                  <div class="card-neu t-card text-center">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"I was terrified after receiving a legal notice about my startup. The corporate advocate
+                      explained everything in plain English and resolved it quickly."</blockquote>
+                    <div class="t-user justify-content-center">
+                      <span><b>Amelia Chen</b><small>Corporate Law Matter</small></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
+            <button class="carousel-ctrl" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous review"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="carousel-indicators mb-0 position-static">
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Review 1"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                aria-label="Review 2"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                aria-label="Review 3"></button>
+            </div>
+            <button class="carousel-ctrl" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next review"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KNOW YOUR RIGHTS / RESOURCES ================= -->
+    <section class="section bg-soft" aria-label="Know your rights resources">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-eyebrow"><i class="fa-solid fa-book-open"></i> Know your rights</span>
+          <h2>Legal resources that make sense</h2>
+          <p>Plain-language guides on common legal situations — so you know your rights before you walk into any room.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal">
+            <a class="card-neu resource-card h-100 text-center d-flex flex-column align-items-center justify-content-center" style="padding:30px 22px;text-decoration:none" href="blog-details.html?post=tenant-rights">
+              <span class="icon-box mx-auto mb-3"><i class="fa-solid fa-house-user"></i></span>
+              <h3 class="h6 mb-2">Tenant Rights</h3>
+              <p class="small text-muted mb-0">Security deposits, evictions, repairs and notice periods explained simply.</p>
+              <span class="card-link mt-3">Read guide <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+            <a class="card-neu resource-card h-100 text-center d-flex flex-column align-items-center justify-content-center" style="padding:30px 22px;text-decoration:none" href="blog-details.html?post=divorce-guide">
+              <span class="icon-box mx-auto mb-3"><i class="fa-solid fa-baby"></i></span>
+              <h3 class="h6 mb-2">Divorce &amp; Custody</h3>
+              <p class="small text-muted mb-0">What to expect from the process, paperwork and timelines from start.</p>
+              <span class="card-link mt-3">Read guide <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+            <a class="card-neu resource-card h-100 text-center d-flex flex-column align-items-center justify-content-center" style="padding:30px 22px;text-decoration:none" href="blog-details.html?post=police-rights">
+              <span class="icon-box mx-auto mb-3"><i class="fa-solid fa-handcuffs"></i></span>
+              <h3 class="h6 mb-2">Police &amp; FIR</h3>
+              <p class="small text-muted mb-0">Your rights during questioning, and how FIRs and bail applications work.</p>
+              <span class="card-link mt-3">Read guide <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+            <a class="card-neu resource-card h-100 text-center d-flex flex-column align-items-center justify-content-center" style="padding:30px 22px;text-decoration:none" href="blog-details.html?post=consumer-rights">
+              <span class="icon-box mx-auto mb-3"><i class="fa-solid fa-life-ring"></i></span>
+              <h3 class="h6 mb-2">Consumer Rights</h3>
+              <p class="small text-muted mb-0">Refunds, warranties and how to file a consumer complaint with confidence.</p>
+              <span class="card-link mt-3">Read guide <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+          <a class="btn btn-ghost btn-lg" href="blog.html"><i class="fa-solid fa-arrow-right"></i> Browse All Resources</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-eyebrow"><i class="fa-solid fa-circle-question"></i> FAQ</span>
+          <h2>Questions about working with us</h2>
+          <p>Everything you need to know before your first consultation — plain answers, no legalese.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 reveal">
+            <div class="accordion accordion-gh" id="homeFaq">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq1" aria-expanded="true">
+                    Is the first consultation really free?
+                  </button>
+                </h3>
+                <div id="hfaq1" class="accordion-collapse collapse show" data-bs-parent="#homeFaq">
+                  <div class="accordion-body">Yes. New clients get a complimentary case review where we assess your matter,
+                    explain your options and recommend suitable advocates. You only pay if you choose to engage a lawyer.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq2">
+                    How do you verify your advocates?
+                  </button>
+                </h3>
+                <div id="hfaq2" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+                  <div class="accordion-body">Every advocate's bar registration, litigations and credentials are checked
+                    before they join our roster. We also collect post-case feedback from clients so ratings stay honest.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq3">
+                    How quickly will I be matched with an advocate?
+                  </button>
+                </h3>
+                <div id="hfaq3" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+                  <div class="accordion-body">Most clients receive 2–3 advocate recommendations within 48 hours of
+                    submitting their case enquiry. Urgent matters like bail applications are prioritised.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq4">
+                    How does the fee structure work?
+                  </button>
+                </h3>
+                <div id="hfaq4" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+                  <div class="accordion-body">Consultations and retainer ranges are agreed transparently with your advocate
+                    before any engagement. There are no hidden charges and you always know the cost in advance.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hfaq5">
+                    Is my case information kept confidential?
+                  </button>
+                </h3>
+                <div id="hfaq5" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+                  <div class="accordion-body">Always. Your case summary is shared only with the advocate you choose and
+                    never with anyone else. We never sell or disclose your details.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a class="btn btn-accent btn-lg" href="contact.html#enquiry"><i class="fa-solid fa-scale-balanced"></i> Still have questions? Ask us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section" aria-label="Call to action">
+      <div class="container">
+        <div class="card-neu neu-lg text-center" style="padding:56px 24px">
+          <span class="sec-eyebrow"><i class="fa-solid fa-scale-balanced"></i> Need legal help?</span>
+          <h2 class="mb-3">Get a free, confidential case review today</h2>
+          <p class="text-muted mb-4" style="max-width:560px;margin-inline:auto">Tell us about your matter — a legal
+            specialist will assess it and match you with the right advocate. First consultation is free for new clients.</p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center">
+            <a class="btn btn-accent btn-lg" href="contact.html#enquiry"><i class="fa-solid fa-file-lines"></i> Submit Case Enquiry</a>
+            <a class="btn btn-ghost btn-lg" href="advocate-directory.html"><i class="fa-solid fa-user-tie"></i> Browse Advocates</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top"><i
+      class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

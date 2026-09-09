@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | JustiAid</title>
+  <meta name="description" content="Create your JustiAid client account to submit case enquiries and manage consultations.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="register">
+  <div class="aurora-bg" aria-hidden="true">
+    <span class="wave w1"></span>
+    <span class="wave w2"></span>
+    <span class="wave w3"></span>
+    <span class="wave w4"></span>
+  </div>
+
+  <div id="preloader" aria-hidden="true">
+    <img class="preloader-paw" src="assets/images/logo.svg" alt="Loading">
+  </div>
+
+  <div id="navbar"></div>
+
+  <main>
+    <section class="auth-wrap" aria-label="Create account">
+      <div class="container">
+        <div class="auth-card card-neu reveal" style="max-width:560px">
+          <a class="brand auth-brand" href="index.html" aria-label="JustiAid - Home">
+            <span class="brand-logo"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2v20M3 6h18M3 6c0 2 1.6 3.6 4 4M21 6c0 2-1.6 3.6-4 4M6 9c-.5 3 .8 5.5 3 6m6-6c.5 3-.8 5.5-3 6m-3 5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="6" r="1.2" fill="currentColor"/></svg></span>
+            <span><span class="brand-name">JustiAid</span><span class="brand-tag">Legal Help</span></span>
+          </a>
+          <h2>Create your account</h2>
+          <p class="auth-sub">Join JustiAid to submit case enquiries and track consultations in one place.</p>
+          <div class="alert py-2 d-none" id="authMsg" role="alert"></div>
+          <form data-validate data-auth-form="register" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="rg-fname">First name</label>
+                <input class="field" id="rg-fname" type="text" placeholder="Jordan" required>
+                <p class="is-invalid-msg">Please enter your first name.</p>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="rg-lname">Last name</label>
+                <input class="field" id="rg-lname" type="text" placeholder="Smith" required>
+                <p class="is-invalid-msg">Please enter your last name.</p>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="rg-email">Email address</label>
+                <input class="field" id="rg-email" type="email" placeholder="you@example.com" required>
+                <p class="is-invalid-msg">Please enter a valid email.</p>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="registerPassword">Password</label>
+                <input class="field" id="registerPassword" type="password" placeholder="Min. 8 characters" minlength="8" required>
+                <p class="is-invalid-msg">Password must be at least 8 characters.</p>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="registerConfirm">Confirm password</label>
+                <input class="field" id="registerConfirm" type="password" placeholder="Repeat password" required>
+                <p class="is-invalid-msg">Passwords do not match.</p>
+              </div>
+              <div class="col-12">
+                <label class="check-label">
+                  <input type="checkbox" required>
+                  <span>I agree to the <a href="#" data-legal="terms">terms of service</a> and <a href="#" data-legal="privacy">privacy policy</a>.</span>
+                </label>
+                <p class="is-invalid-msg">Please accept the terms to continue.</p>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-accent btn-lg btn-block" type="submit"><i class="fa-solid fa-user-plus"></i> Create Account</button>
+              </div>
+            </div>
+          </form>
+          <div class="divider">or sign up with</div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-ghost btn-block" type="button"><i class="fa-brands fa-google"></i> Sign up with Google</button>
+            <button class="btn btn-ghost btn-block" type="button"><i class="fa-brands fa-apple"></i> Sign up with Apple</button>
+          </div>
+          <p class="auth-alt">Already have an account? <a href="login.html" class="fw-bold">Sign in</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

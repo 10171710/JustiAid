@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon | JustiAid</title>
+  <meta name="description" content="JustiAid is expanding. We'll be back soon with new legal resources and services.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="coming-soon">
+  <div class="aurora-bg" aria-hidden="true">
+    <span class="wave w1"></span>
+    <span class="wave w2"></span>
+    <span class="wave w3"></span>
+    <span class="wave w4"></span>
+  </div>
+
+  <div id="preloader" aria-hidden="true">
+    <img class="preloader-paw" src="assets/images/logo.svg" alt="Loading">
+  </div>
+
+  <div id="navbar"></div>
+
+  <main>
+    <section class="center-page" aria-label="Coming soon">
+      <div class="paws-bg" aria-hidden="true">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+      </div>
+      <div class="container">
+        <div class="reveal">
+          <span class="icon-box mx-auto mb-4" style="width:84px;height:84px;font-size:2rem;color:var(--accent)"><i class="fa-solid fa-scale-balanced"></i></span>
+          <span class="sec-eyebrow"><i class="fa-solid fa-lightbulb"></i> Something new is on the docket</span>
+          <h1 class="mb-3" style="font-size:clamp(2rem,4.5vw,3.2rem)">We're expanding our legal services</h1>
+          <p class="text-muted mx-auto mb-0" style="max-width:560px">Our advocates are hard at work behind the scenes. New practice areas, richer rights guides and a faster case matching experience are on the way.</p>
+
+          <div class="countdown" id="countdown">
+            <div class="count-box"><b id="cd-days">28</b><span>Days</span></div>
+            <div class="count-box"><b id="cd-hours">00</b><span>Hours</span></div>
+            <div class="count-box"><b id="cd-mins">00</b><span>Minutes</span></div>
+            <div class="count-box"><b id="cd-secs">00</b><span>Seconds</span></div>
+          </div>
+
+          <div class="d-flex justify-content-center mb-4">
+            <form class="news-form" style="max-width:420px;width:100%" data-newsletter aria-label="Notify me">
+              <input class="field" type="email" placeholder="Notify me when we launch" aria-label="Email address" required>
+              <button class="btn btn-accent" type="submit"><i class="fa-solid fa-bell"></i></button>
+            </form>
+          </div>
+          <p class="news-ok text-muted small" style="display:none">You're on the list — we'll keep you posted!</p>
+
+          <div class="d-flex gap-2 justify-content-center mt-4">
+            <a class="soc" href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook" data-native-app data-app-url="fb://page/justiaid"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="soc" href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram" data-native-app data-app-url="instagram://user?username=justiaid"><i class="fa-brands fa-instagram"></i></a>
+            <a class="soc" href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" data-native-app data-app-url="x://timeline, twitter://user?screen_name=justiaid"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <p class="mt-4 mb-0"><a class="btn btn-ghost btn-sm" href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to home</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

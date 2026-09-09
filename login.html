@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | JustiAid</title>
+  <meta name="description" content="Sign in to your JustiAid client account to track case enquiries and consultations.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="login">
+  <div class="aurora-bg" aria-hidden="true">
+    <span class="wave w1"></span>
+    <span class="wave w2"></span>
+    <span class="wave w3"></span>
+    <span class="wave w4"></span>
+  </div>
+
+  <div id="preloader" aria-hidden="true">
+    <img class="preloader-paw" src="assets/images/logo.svg" alt="Loading">
+  </div>
+
+  <div id="navbar"></div>
+
+  <main>
+    <section class="auth-wrap" aria-label="Login">
+      <div class="container">
+        <div class="auth-card card-neu reveal">
+          <a class="brand auth-brand" href="index.html" aria-label="JustiAid - Home">
+            <span class="brand-logo"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2v20M3 6h18M3 6c0 2 1.6 3.6 4 4M21 6c0 2-1.6 3.6-4 4M6 9c-.5 3 .8 5.5 3 6m6-6c.5 3-.8 5.5-3 6m-3 5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="6" r="1.2" fill="currentColor"/></svg></span>
+            <span><span class="brand-name">JustiAid</span><span class="brand-tag">Legal Help</span></span>
+          </a>
+          <h2>Welcome back!</h2>
+          <p class="auth-sub">Sign in to track your case enquiries and consultations.</p>
+          <div class="alert py-2 d-none" id="authMsg" role="alert"></div>
+          <form data-validate data-auth-form="login" novalidate>
+            <div class="mb-3">
+              <label class="form-label" for="lg-email">Email address</label>
+              <input class="field" id="lg-email" type="email" placeholder="you@example.com" required>
+              <p class="is-invalid-msg">Please enter a valid email.</p>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="passwordField">Password</label>
+              <div class="position-relative">
+                <input class="field" id="passwordField" type="password" placeholder="••••••••" required>
+                <button class="pw-toggle" type="button" id="pwToggle" aria-label="Show password"><i class="fa-solid fa-eye"></i></button>
+              </div>
+              <p class="is-invalid-msg">Please enter your password.</p>
+              <div class="text-end mt-2"><a class="small fw-bold" href="#" data-legal="privacy">Forgot password?</a></div>
+            </div>
+            <div class="mb-4">
+              <label class="check-label">
+                <input type="checkbox" checked>
+                <span>Remember me for 30 days</span>
+              </label>
+            </div>
+            <button class="btn btn-accent btn-lg btn-block" type="submit"><i class="fa-solid fa-right-to-bracket"></i> Sign In</button>
+          </form>
+          <div class="divider">or continue with</div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-ghost btn-block" type="button"><i class="fa-brands fa-google"></i> Sign in with Google</button>
+            <button class="btn btn-ghost btn-block" type="button"><i class="fa-brands fa-apple"></i> Sign in with Apple</button>
+          </div>
+          <p class="auth-alt">New to JustiAid? <a href="register.html" class="fw-bold">Create an account</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Team, Mission &amp; History | JustiAid</title>
+  <meta name="description" content="Learn about JustiAid's story, mission and our team of legal specialists and case managers.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="about">
+  <div class="aurora-bg" aria-hidden="true">
+    <span class="wave w1"></span>
+    <span class="wave w2"></span>
+    <span class="wave w3"></span>
+    <span class="wave w4"></span>
+  </div>
+
+  <div id="preloader" aria-hidden="true">
+    <img class="preloader-paw" src="assets/images/logo.svg" alt="Loading">
+  </div>
+
+  <div id="navbar"></div>
+
+  <main>
+    <!-- Page header -->
+    <section class="page-header" aria-label="About JustiAid" style="background:linear-gradient(rgba(var(--bg-rgb),.7),rgba(var(--bg-rgb),.7)),url('assets/images/pexels-sora-shimazaki-5673478.jpg') center/cover no-repeat">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7 text-lg-start">
+            <span class="sec-eyebrow reveal"><i class="fa-solid fa-scale-balanced"></i> About us</span>
+            <h1 class="reveal">The people behind the gavel</h1>
+            <p class="text-muted reveal reveal-delay-1" style="max-width:520px">JustiAid is a legal aid and advocate
+              referral service built on honesty, confidentiality and clear communication.</p>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb reveal justify-content-center justify-content-lg-start">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block reveal">
+            <div class="neu" style="padding:14px">
+              <img src="assets/images/pexels-sora-shimazaki-5673478.jpg" alt="About JustiAid illustration"
+                style="width:100%;border-radius:calc(var(--r-md) - 8px)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="section pt-2" aria-label="Our mission">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal">
+            <div class="neu" style="padding:18px">
+              <img src="assets/images/pexels-oleg-cervi-2147660352-29763051%20%281%29.jpg" alt="Courthouse illustration" style="border-radius:calc(var(--r-md) - 8px)">
+            </div>
+          </div>
+          <div class="col-lg-6 reveal">
+            <span class="sec-eyebrow"><i class="fa-solid fa-bullseye"></i> Our mission</span>
+            <h2 class="mb-3">Legal help that respects you first</h2>
+            <p class="text-muted">Founded in 2011 by senior advocate Daniel Okafor, JustiAid began with a single phone
+              line and a simple belief: nobody should face the legal system confused or alone. Today we connect clients
+              with a vetted network of 320+ advocates across every major practice area — but that belief hasn't changed.</p>
+            <p class="text-muted">Every advocate in our directory has verified credentials. We explain options in plain
+              language, we never push retainers, and we'll happily recommend a free legal-aid path if that's what you need.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <div class="neu-flat p-3 text-center" style="min-width:120px">
+                <b class="fs-4" style="color:var(--heading)"><span data-count="15">0</span>+</b>
+                <div class="small text-muted">Years in service</div>
+              </div>
+              <div class="neu-flat p-3 text-center" style="min-width:120px">
+                <b class="fs-4" style="color:var(--heading)"><span data-count="4.2">0</span>k</b>
+                <div class="small text-muted">Cases referred</div>
+              </div>
+              <div class="neu-flat p-3 text-center" style="min-width:120px">
+                <b class="fs-4" style="color:var(--heading)"><span data-count="320">0</span>+</b>
+                <div class="small text-muted">Verified advocates</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History timeline -->
+    <section class="section bg-soft" aria-label="Our history">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-eyebrow"><i class="fa-solid fa-timeline"></i> Our story</span>
+          <h2>Milestones along the way</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="card-neu step-card h-100">
+              <span class="step-num"><i class="fa-solid fa-seedling"></i></span>
+              <h3>One phone line</h3>
+              <p>Daniel opens the JustiAid referral line with a handful of trusted advocate contacts.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+            <div class="card-neu step-card h-100">
+              <span class="step-num"><i class="fa-solid fa-address-card"></i></span>
+              <h3>Verification programme</h3>
+              <p>Every advocate is vetted for bar registration, experience and references before joining.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+            <div class="card-neu step-card h-100">
+              <span class="step-num"><i class="fa-solid fa-globe"></i></span>
+              <h3>Going digital</h3>
+              <p>The online directory and case enquiry platform launch, matching clients nationwide.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+            <div class="card-neu step-card h-100">
+              <span class="step-num"><i class="fa-solid fa-heart"></i></span>
+              <h3>Pro-bono fund</h3>
+              <p>We set aside a monthly pro-bono slot for every 25 paid referrals to keep justice accessible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section" aria-label="Our values">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-eyebrow"><i class="fa-solid fa-handshake"></i> What we stand for</span>
+          <h2>Values that guide every referral</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="card-neu h-100 text-center" style="padding:30px 22px">
+              <span class="icon-box mx-auto mb-3"><i class="fa-solid fa-shield-halved"></i></span>
+              <h3 class="h6 mb-2">Integrity</h3>
+              <p class="small text-muted mb-0">Honest assessments, transparent fees and no conflicts of interest — ever.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+            <div class="card-neu h-100 text-center" style="padding:30px 22px">
+              <span class="icon-box mx-auto mb-3"><i class="fa-solid fa-lock"></i></span>
+              <h3 class="h6 mb-2">Confidentiality</h3>
+              <p class="small text-muted mb-0">Your matter is shared only with the advocate you choose to engage.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+            <div class="card-neu h-100 text-center" style="padding:30px 22px">
+              <span class="icon-box mx-auto mb-3"><i class="fa-solid fa-scale-balanced"></i></span>
+              <h3 class="h6 mb-2">Accessibility</h3>
+              <p class="small text-muted mb-0">Plain-language guidance and pro-bono pathways so justice isn't a luxury.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section bg-soft" aria-label="Our team">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-eyebrow"><i class="fa-solid fa-users"></i> The team</span>
+          <h2>Meet the specialists behind JustiAid</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="card-neu text-center" style="padding:28px 20px">
+              <span class="icon-box mx-auto mb-3" style="border-radius:50%;width:84px;height:84px;font-size:1.9rem"><i class="fa-solid fa-user"></i></span>
+              <h3 class="h6 mb-1">Daniel Okafor</h3>
+              <p class="small text-muted mb-3">Founder &amp; Senior Advisor</p>
+              <div class="d-flex justify-content-center gap-2">
+                <a class="soc" href="https://www.linkedin.com/company/justiaid" target="_blank" rel="noopener" aria-label="LinkedIn" data-native-app data-app-url="linkedin://company/justiaid"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="soc" href="mailto:hello@justiaid.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+            <div class="card-neu text-center" style="padding:28px 20px">
+              <span class="icon-box mx-auto mb-3" style="border-radius:50%;width:84px;height:84px;font-size:1.9rem"><i class="fa-solid fa-user"></i></span>
+              <h3 class="h6 mb-1">Priya Nair</h3>
+              <p class="small text-muted mb-3">Head of Family Law</p>
+              <div class="d-flex justify-content-center gap-2">
+                <a class="soc" href="https://www.linkedin.com/company/justiaid" target="_blank" rel="noopener" aria-label="LinkedIn" data-native-app data-app-url="linkedin://company/justiaid"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="soc" href="mailto:hello@justiaid.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+            <div class="card-neu text-center" style="padding:28px 20px">
+              <span class="icon-box mx-auto mb-3" style="border-radius:50%;width:84px;height:84px;font-size:1.9rem"><i class="fa-solid fa-user"></i></span>
+              <h3 class="h6 mb-1">Tom Becker</h3>
+              <p class="small text-muted mb-3">Head of Criminal Defense</p>
+              <div class="d-flex justify-content-center gap-2">
+                <a class="soc" href="https://www.linkedin.com/company/justiaid" target="_blank" rel="noopener" aria-label="LinkedIn" data-native-app data-app-url="linkedin://company/justiaid"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="soc" href="mailto:hello@justiaid.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+            <div class="card-neu text-center" style="padding:28px 20px">
+              <span class="icon-box mx-auto mb-3" style="border-radius:50%;width:84px;height:84px;font-size:1.9rem"><i class="fa-solid fa-user"></i></span>
+              <h3 class="h6 mb-1">Diego Ramos</h3>
+              <p class="small text-muted mb-3">Head of Corporate Law</p>
+              <div class="d-flex justify-content-center gap-2">
+                <a class="soc" href="https://www.linkedin.com/company/justiaid" target="_blank" rel="noopener" aria-label="LinkedIn" data-native-app data-app-url="linkedin://company/justiaid"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="soc" href="mailto:hello@justiaid.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" aria-label="Call to action">
+      <div class="container">
+        <div class="card-neu neu-lg text-center" style="padding:56px 24px">
+          <span class="sec-eyebrow"><i class="fa-solid fa-scale-balanced"></i> Need a hand?</span>
+          <h2 class="mb-3">Let's find you the right advocate</h2>
+          <div class="d-flex flex-wrap gap-3 justify-content-center">
+            <a class="btn btn-accent btn-lg" href="contact.html#enquiry"><i class="fa-solid fa-file-lines"></i> Case Enquiry</a>
+            <a class="btn btn-ghost btn-lg" href="advocate-directory.html"><i class="fa-solid fa-user-tie"></i> Browse Advocates</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
