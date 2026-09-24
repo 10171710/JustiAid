@@ -43,13 +43,13 @@
       <div class="container">
         <div class="row align-items-center g-4">
           <div class="col-lg-7 text-lg-start">
-            <span class="sec-eyebrow"><i class="fa-solid fa-envelope-open-text"></i> Contact</span>
-            <h1>Tell us about your matter</h1>
-            <p style="max-width:520px;color:#444">Submit a confidential case enquiry and a
+            <span class="sec-eyebrow reveal"><i class="fa-solid fa-envelope-open-text"></i> Contact</span>
+            <h1 class="reveal">Tell us about your matter</h1>
+            <p class="text-muted reveal reveal-delay-1" style="max-width:520px">Submit a confidential case enquiry and a
               legal specialist will assess it free of charge — usually within 48 hours.</p>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb justify-content-center justify-content-lg-start" style="color:#444">
-                <li class="breadcrumb-item"><a href="index.html" style="color:#444">Home</a></li>
+              <ol class="breadcrumb reveal justify-content-center justify-content-lg-start">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
               </ol>
             </nav>
@@ -130,13 +130,13 @@
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label small fw-bold" for="ct-name">Full name *</label>
-                  <input class="field" type="text" id="ct-name" name="name" placeholder="Your name" required>
-                  <span class="is-invalid-msg">Please enter your full name.</span>
+                  <input class="field" type="text" id="ct-name" name="name" placeholder="Your name" minlength="3" pattern="[A-Za-z\s'.-]{3,}" required>
+                  <span class="is-invalid-msg">Name must be more than 2 letters (at least 3 characters).</span>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small fw-bold" for="ct-email">Email address *</label>
-                  <input class="field" type="email" id="ct-email" name="email" placeholder="you@example.com" required>
-                  <span class="is-invalid-msg">Please enter a valid email address.</span>
+                  <input class="field" type="email" id="ct-email" name="email" placeholder="you@example.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required style="text-transform:lowercase">
+                  <span class="is-invalid-msg">Please enter a valid lowercase email address.</span>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small fw-bold" for="ct-phone">Phone number (10 digits) *</label>
@@ -147,16 +147,18 @@
                 </div>
                 <div class="col-md-6">
                   <label class="form-label small fw-bold" for="ct-area">Practice area *</label>
-                  <select class="field" id="ct-area" name="area" required>
-                    <option value="" selected disabled>Select a practice area</option>
-                    <option value="family">Family Law</option>
-                    <option value="property">Property Law</option>
-                    <option value="criminal">Criminal Defense</option>
-                    <option value="corporate">Corporate Law</option>
-                    <option value="consumer">Consumer Rights</option>
-                    <option value="other">Other / Not sure</option>
-                  </select>
-                  <span class="is-invalid-msg">Please select a practice area.</span>
+                  <input class="field" type="text" id="ct-area" name="area" list="practice-areas-list" placeholder="e.g. Family Law, Criminal, Property" required autocomplete="off">
+                  <datalist id="practice-areas-list">
+                    <option value="Family Law">
+                    <option value="Property Law">
+                    <option value="Criminal Defense">
+                    <option value="Corporate Law">
+                    <option value="Consumer Rights">
+                    <option value="Employment & Labor Law">
+                    <option value="Civil Litigation">
+                    <option value="Other / Not sure">
+                  </datalist>
+                  <span class="is-invalid-msg">Please enter or select a practice area.</span>
                 </div>
                 <div class="col-12">
                   <label class="form-label small fw-bold" for="ct-message">Brief description of your matter *</label>

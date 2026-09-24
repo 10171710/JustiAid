@@ -51,8 +51,8 @@
           <form data-validate data-auth-form="login" novalidate>
             <div class="mb-3">
               <label class="form-label" for="lg-email">Email address</label>
-              <input class="field" id="lg-email" type="email" placeholder="you@example.com" required>
-              <p class="is-invalid-msg">Please enter a valid email.</p>
+              <input class="field" id="lg-email" type="email" placeholder="you@example.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required style="text-transform:lowercase">
+              <p class="is-invalid-msg">Please enter a valid lowercase email address.</p>
             </div>
             <div class="mb-3">
               <label class="form-label" for="passwordField">Password</label>

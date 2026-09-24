@@ -25,7 +25,7 @@
     '        <div class="d-flex gap-2">' +
     '          <a class="soc" href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook" data-native-app data-app-url="fb://page/justiaid"><i class="fa-brands fa-facebook-f"></i></a>' +
     '          <a class="soc" href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram" data-native-app data-app-url="instagram://user?username=justiaid"><i class="fa-brands fa-instagram"></i></a>' +
-    '          <a class="soc" href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" data-native-app data-app-url="x://timeline, twitter://user?screen_name=justiaid"><i class="fa-brands fa-twitter"></i></a>' +
+    '          <a class="soc" href="https://x.com" target="_blank" rel="noopener" aria-label="X" data-native-app data-app-url="x://timeline, twitter://user?screen_name=justiaid"><i class="fa-brands fa-x-twitter"></i></a>' +
     '          <a class="soc" href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube" data-native-app data-app-url="vnd.youtube://www.youtube.com/user/justiaid, youtube://www.youtube.com/user/justiaid"><i class="fa-brands fa-youtube"></i></a>' +
     '        </div>' +
     '      </div>' +
@@ -55,7 +55,7 @@
     '        <h3 class="footer-head">Legal Updates</h3>' +
     '        <p class="text-muted small mb-3">Subscribe for plain-language legal news, rights guides and firm updates — no spam, just clarity.</p>' +
     '        <form class="news-form" data-newsletter aria-label="Newsletter subscription">' +
-    '          <input class="field" type="email" placeholder="Your email address" aria-label="Email address" required>' +
+    '          <input class="field" type="email" placeholder="Your email address" aria-label="Email address" required oninput="this.value=this.value.toLowerCase()" style="text-transform:lowercase">' +
     '          <button class="btn btn-accent btn-sm" type="submit"><i class="fa-solid fa-paper-plane"></i></button>' +
     '        </form>' +
     '        <p class="news-ok text-muted small mt-2" style="display:none">Subscribed! We will keep you informed.</p>' +
@@ -158,30 +158,33 @@
 
     var form = host.querySelector('[data-newsletter]');
     if (form) {
+      var input = form.querySelector('input');
+      if (input) {
+        input.addEventListener('input', function () {
+          this.value = this.value.toLowerCase();
+          this.classList.remove('invalid');
+        });
+      }
       form.addEventListener('submit', function (e) {
         e.preventDefault();
-        var input = form.querySelector('input');
         var ok = host.querySelector('.news-ok');
-        if (!input.value || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) {
-          input.classList.add('invalid');
+        var val = input ? input.value.trim().toLowerCase() : '';
+        var emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+        if (!val || !emailRegex.test(val)) {
+          if (input) input.classList.add('invalid');
           return;
         }
-        input.classList.remove('invalid');
+        if (input) {
+          input.value = '';
+          input.classList.remove('invalid');
+        }
+        if (ok) ok.style.display = 'block';
         if (window.sb) {
-          sb.from('newsletter').insert({ email: input.value.trim() }).then(function (res) {
+          sb.from('newsletter').insert({ email: val }).then(function (res) {
             if (res && res.error && res.error.code !== '23505') {
-              input.classList.add('invalid');
-              return;
+              if (input) input.classList.add('invalid');
             }
-            form.style.display = 'none';
-            if (ok) ok.style.display = 'block';
-          }).catch(function () {
-            form.style.display = 'none';
-            if (ok) ok.style.display = 'block';
-          });
-        } else {
-          form.style.display = 'none';
-          if (ok) ok.style.display = 'block';
+          }).catch(function () {});
         }
       });
     }

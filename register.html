@@ -52,18 +52,18 @@
             <div class="row g-3">
               <div class="col-md-6">
                 <label class="form-label" for="rg-fname">First name</label>
-                <input class="field" id="rg-fname" type="text" placeholder="Jordan" required>
-                <p class="is-invalid-msg">Please enter your first name.</p>
+                <input class="field" id="rg-fname" type="text" placeholder="Jordan" minlength="3" pattern="[A-Za-z\s'.-]{3,}" required>
+                <p class="is-invalid-msg">First name must be at least 3 letters.</p>
               </div>
               <div class="col-md-6">
                 <label class="form-label" for="rg-lname">Last name</label>
-                <input class="field" id="rg-lname" type="text" placeholder="Smith" required>
-                <p class="is-invalid-msg">Please enter your last name.</p>
+                <input class="field" id="rg-lname" type="text" placeholder="Smith" minlength="3" pattern="[A-Za-z\s'.-]{3,}" required>
+                <p class="is-invalid-msg">Last name must be at least 3 letters.</p>
               </div>
               <div class="col-12">
                 <label class="form-label" for="rg-email">Email address</label>
-                <input class="field" id="rg-email" type="email" placeholder="you@example.com" required>
-                <p class="is-invalid-msg">Please enter a valid email.</p>
+                <input class="field" id="rg-email" type="email" placeholder="you@example.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required style="text-transform:lowercase">
+                <p class="is-invalid-msg">Please enter a valid lowercase email address.</p>
               </div>
               <div class="col-md-6">
                 <label class="form-label" for="registerPassword">Password</label>

@@ -24,8 +24,8 @@
     '  <span class="icon-sun"><i class="fa-solid fa-sun"></i></span>' +
     '  <span class="icon-moon"><i class="fa-solid fa-moon"></i></span>' +
     '</button>' +
-    '<button class="rtl-toggle" type="button" data-rtl-toggle aria-label="Toggle text direction">' +
-    '  <span data-rtl-label>RTL</span>' +
+    '<button class="rtl-toggle" type="button" data-rtl-toggle aria-label="Toggle text direction" title="Toggle RTL/LTR">' +
+    '  <i class="fa-solid fa-right-left" aria-hidden="true"></i>' +
     '</button>';
 
   var isAuth = document.body.getAttribute('data-page') === 'login' ||
@@ -122,7 +122,13 @@
       if (a.href) {
         var current = window.location.pathname.replace(/\/+$/, '');
         var target = a.pathname.replace(/\/+$/, '');
-        if (current === target && target !== '') a.classList.add('active');
+        if (current === target && target !== '') {
+          a.classList.add('active');
+        } else if (current.indexOf('service-details') !== -1 && target.indexOf('services.html') !== -1) {
+          a.classList.add('active');
+        } else if (current.indexOf('blog-details') !== -1 && target.indexOf('blog.html') !== -1) {
+          a.classList.add('active');
+        }
       }
     });
 
