@@ -314,17 +314,22 @@
       }
     });
 
-    /* -- live search -- */
-    var searchInput = $('#blogSearch');
-    if (searchInput) {
-      searchInput.addEventListener('input', function () {
-        var q = searchInput.value.trim().toLowerCase();
-        searchActive = q.length > 0;
-        items.forEach(function (it) {
-          var match = !q || it.textContent.toLowerCase().indexOf(q) !== -1;
-          it.dataset.filterMatch = match ? 'true' : 'false';
+    /* -- live search (sync desktop sidebar & mobile top search) -- */
+    var searchInputs = $$('#blogSearch, #blogSearchMobile, [data-blog-search]');
+    if (searchInputs.length) {
+      searchInputs.forEach(function (input) {
+        input.addEventListener('input', function () {
+          var q = input.value.trim().toLowerCase();
+          searchActive = q.length > 0;
+          searchInputs.forEach(function (other) {
+            if (other !== input) other.value = input.value;
+          });
+          items.forEach(function (it) {
+            var match = !q || it.textContent.toLowerCase().indexOf(q) !== -1;
+            it.dataset.filterMatch = match ? 'true' : 'false';
+          });
+          paginate(true);
         });
-        paginate(true);
       });
     }
 

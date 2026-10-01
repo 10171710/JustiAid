@@ -69,6 +69,12 @@
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-8">
+            <!-- Mobile Top Search (Visible at 360px & 768px viewports) -->
+            <div class="card-neu p-3 mb-4 d-lg-none blog-mobile-search-card reveal">
+              <label for="blogSearchMobile" class="form-label small fw-bold mb-2"><i class="fa-solid fa-magnifying-glass me-2" style="color:var(--accent)"></i>Search legal guides</label>
+              <input class="field" type="search" id="blogSearchMobile" placeholder="Search articles by keyword, topic or law…" aria-label="Search articles">
+            </div>
+
             <div data-filter-group class="nav-pill-wrap mb-4 reveal">
               <button class="nav-pill active" data-filter="all"><i class="fa-solid fa-list"></i> All</button>
               <button class="nav-pill" data-filter="rights"><i class="fa-solid fa-book-open"></i> Know Your Rights</button>
@@ -82,7 +88,7 @@
                 <article class="card-neu blog-card h-100">
                   <div class="card-thumb"><img src="assets/images/blog-tenant.jpg" alt="Rental apartment and key illustration"></div>
                   <div class="card-body-neu">
-                    <span class="badge" style="background:var(--accent-soft);color:var(--accent)">Know Your Rights</span>
+                    <span class="badge badge-soft" style="background:var(--accent-soft);color:var(--accent)">Know Your Rights</span>
                     <h3 class="h5 mt-2">Tenant Rights: Deposits, Evictions &amp; Repairs</h3>
                     <p class="small text-muted mb-3">What landlords can and cannot do, and how to protect your deposit.</p>
                     <a class="card-link" href="blog-details.html?post=tenant-rights">Read guide <i class="fa-solid fa-arrow-right"></i></a>
@@ -93,7 +99,7 @@
                 <article class="card-neu blog-card h-100">
                   <div class="card-thumb"><img src="assets/images/blog-divorce.jpg" alt="Two hearts illustration for divorce guide"></div>
                   <div class="card-body-neu">
-                    <span class="badge" style="background:var(--accent-soft);color:var(--accent)">Family</span>
+                    <span class="badge badge-soft" style="background:var(--accent-soft);color:var(--accent)">Family</span>
                     <h3 class="h5 mt-2">Divorce Without Fear: What to Expect</h3>
                     <p class="small text-muted mb-3">The paperwork, timelines and costs of a mutual-consent divorce explained.</p>
                     <a class="card-link" href="blog-details.html?post=divorce-guide">Read guide <i class="fa-solid fa-arrow-right"></i></a>
@@ -102,9 +108,9 @@
               </div>
               <div class="col-md-6 reveal" data-filter-item="rights">
                 <article class="card-neu blog-card h-100">
-                  <div class="card-thumb"><img src="assets/images/blog-police.jpg" alt="Shield with gavel illustration" style="object-position:0% 20%"></div>
+                  <div class="card-thumb"><img src="assets/images/blog-police.jpg" alt="Police questioning and FIR legal procedures"></div>
                   <div class="card-body-neu">
-                    <span class="badge" style="background:var(--accent-soft);color:var(--accent)">Know Your Rights</span>
+                    <span class="badge badge-soft" style="background:var(--accent-soft);color:var(--accent)">Know Your Rights</span>
                     <h3 class="h5 mt-2">Police Questioning &amp; Your Rights</h3>
                     <p class="small text-muted mb-3">What to do if you're questioned, detained or served notice — your basics.</p>
                     <a class="card-link" href="blog-details.html?post=police-rights">Read guide <i class="fa-solid fa-arrow-right"></i></a>
@@ -115,7 +121,7 @@
                 <article class="card-neu blog-card h-100">
                   <div class="card-thumb"><img src="assets/images/blog-title.jpg" alt="Property title document with checkmark"></div>
                   <div class="card-body-neu">
-                    <span class="badge" style="background:var(--accent-soft);color:var(--accent)">Property</span>
+                    <span class="badge badge-soft" style="background:var(--accent-soft);color:var(--accent)">Property</span>
                     <h3 class="h5 mt-2">Buying a Home? Verify the Title First</h3>
                     <p class="small text-muted mb-3">A 5-step title check that prevents expensive property disputes later.</p>
                     <a class="card-link" href="blog-details.html?post=title-check">Read guide <i class="fa-solid fa-arrow-right"></i></a>
@@ -126,7 +132,7 @@
                 <article class="card-neu blog-card h-100">
                   <div class="card-thumb"><img src="assets/images/blog-consumer.jpg" alt="Receipt with plus and document illustration"></div>
                   <div class="card-body-neu">
-                    <span class="badge" style="background:var(--accent-soft);color:var(--accent)">Know Your Rights</span>
+                    <span class="badge badge-soft" style="background:var(--accent-soft);color:var(--accent)">Know Your Rights</span>
                     <h3 class="h5 mt-2">Consumer Rights: Refunds &amp; Warranties</h3>
                     <p class="small text-muted mb-3">When you're owed a refund and how to file a consumer complaint.</p>
                     <a class="card-link" href="blog-details.html?post=consumer-rights">Read guide <i class="fa-solid fa-arrow-right"></i></a>
@@ -137,7 +143,7 @@
                 <article class="card-neu blog-card h-100">
                   <div class="card-thumb"><img src="assets/images/blog-efiling.jpg" alt="Online e-filing documents with upload arrow"></div>
                   <div class="card-body-neu">
-                    <span class="badge" style="background:var(--accent-soft);color:var(--accent)">Legal News</span>
+                    <span class="badge badge-soft" style="background:var(--accent-soft);color:var(--accent)">Legal News</span>
                     <h3 class="h5 mt-2">New E-Filing Rules: What They Mean for You</h3>
                     <p class="small text-muted mb-3">How the shift to digital filing changes timelines and court practice.</p>
                     <a class="card-link" href="blog-details.html?post=e-filing">Read guide <i class="fa-solid fa-arrow-right"></i></a>
@@ -147,7 +153,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-none d-lg-block">
             <div class="sidebar-sticky">
               <aside class="card-neu p-4 reveal">
                 <h3 class="h5 mb-3"><i class="fa-solid fa-magnifying-glass me-2" style="color:var(--accent)"></i>Search guides</h3>

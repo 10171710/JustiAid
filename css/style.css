@@ -887,16 +887,234 @@ input.invalid ~ .is-invalid-msg,
 [data-theme="dark"] .alert-success span { color: #f0fdfa; }
 
 /* ============ Page header / breadcrumb ============ */
-.page-header { padding: 72px 0 58px; position: relative; overflow: hidden; margin-bottom: 48px; text-align: center;
-  background: linear-gradient(rgba(var(--bg-rgb), .7), rgba(var(--bg-rgb), .7)), url('../assets/images/banner.jpg') center/cover no-repeat; }
+.page-header {
+  padding: 72px 0 58px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 48px;
+  text-align: center;
+  background: linear-gradient(rgba(var(--bg-rgb), .88), rgba(var(--bg-rgb), .88)), url('../assets/images/banner.jpg') center/cover no-repeat;
+}
 .page-header > .container, .hero > .container { position: relative; z-index: 1; }
-html[data-theme="light"] .page-header .text-muted { color: #444 !important; }
-html[data-theme="light"] .page-header .breadcrumb a { color: #444; }
-.page-header h1 { font-size: clamp(2rem, 4vw, 2.9rem); font-weight: 800; margin-bottom: 12px; }
+.page-header h1 {
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #111111;
+}
+.page-header p,
+.page-header .text-muted,
+.page-header-lead {
+  color: #111111 !important;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.page-header .breadcrumb a {
+  color: #222222;
+  font-weight: 600;
+}
+.page-header .breadcrumb .active {
+  color: var(--accent);
+  font-weight: 700;
+}
 .breadcrumb { --bs-breadcrumb-divider: '›'; margin: 0; justify-content: center; }
 .breadcrumb a { color: var(--text-muted); font-weight: 600; }
 .breadcrumb a:hover { color: var(--accent); }
 .breadcrumb .active { color: var(--accent); font-weight: 600; }
+
+[data-theme="dark"] .page-header h1 {
+  color: #ffffff !important;
+}
+[data-theme="dark"] .page-header p,
+[data-theme="dark"] .page-header .text-muted,
+[data-theme="dark"] .page-header-lead {
+  color: #f1ede4 !important;
+  font-weight: 500;
+}
+[data-theme="dark"] .page-header .breadcrumb a {
+  color: #d2cdc4;
+}
+[data-theme="dark"] .page-header .breadcrumb a:hover {
+  color: var(--accent);
+}
+[data-theme="dark"] .page-header .breadcrumb-item + .breadcrumb-item::before {
+  color: #a49e93;
+}
+
+/* ============ Card Badges & Pills ============ */
+.card-body-neu .badge,
+.card-body-neu .badge-soft,
+.blog-card .card-body-neu .badge {
+  align-self: flex-start !important;
+  width: fit-content !important;
+  max-width: fit-content !important;
+  text-align: left !important;
+  display: inline-flex !important;
+  align-items: center;
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+  box-shadow: var(--inset-1);
+}
+[dir="rtl"] .card-body-neu .badge,
+[dir="rtl"] .blog-card .card-body-neu .badge {
+  text-align: right !important;
+  align-self: flex-start !important;
+}
+
+/* ============ Mobile Blog Search (360px & 768px) ============ */
+.blog-mobile-search-card {
+  border-radius: var(--r-md);
+  margin-bottom: 24px;
+  background: var(--surface);
+  border: 1px solid rgba(var(--accent-rgb), 0.12);
+}
+@media (max-width: 991.98px) {
+  .blog-mobile-search-card {
+    display: block !important;
+    margin-bottom: 22px;
+  }
+  .blog-mobile-search-card .field {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
+/* ============ Service Card Image Containers ============ */
+.service-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.service-card.has-img {
+  padding: 0 !important;
+}
+.service-card .card-thumb {
+  height: 185px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: calc(var(--r-md) - 6px) calc(var(--r-md) - 6px) 0 0;
+}
+.service-card .card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s cubic-bezier(0.2, 0, 0.2, 1);
+}
+.service-card:hover .card-thumb img {
+  transform: scale(1.06);
+}
+.service-card .card-content {
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.resource-card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+/* ============ Testimonials / Client Stories ============ */
+.section-pad {
+  padding: 95px 0;
+}
+@media (max-width: 768px) {
+  .section-pad {
+    padding: 68px 0;
+  }
+}
+.t-card {
+  padding: 44px 38px 36px !important;
+  border-radius: var(--r-lg);
+  position: relative;
+  margin-inline: auto;
+  box-shadow: var(--shadow-2);
+}
+.t-card .stars {
+  color: var(--gold);
+  font-size: 1.25rem;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+.t-card blockquote {
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 24px;
+  border: none;
+  padding: 0;
+}
+.t-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 16px;
+}
+.t-user img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+  box-shadow: var(--shadow-2);
+  border: 2.5px solid var(--accent);
+  background: var(--surface);
+}
+.t-user b {
+  display: block;
+  color: var(--heading);
+  font-size: 1.05rem;
+}
+.t-user small {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+.carousel-ctrl {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--bg);
+  box-shadow: var(--shadow-1);
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .25s ease;
+  cursor: pointer;
+}
+.carousel-ctrl:hover {
+  box-shadow: var(--shadow-2);
+  transform: translateY(-2px);
+  color: var(--accent-2);
+}
+.carousel-ctrl:active {
+  box-shadow: var(--inset-1);
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--shd);
+  border: none;
+  opacity: 0.7;
+  transition: all .3s ease;
+}
+.carousel-indicators .active {
+  width: 28px;
+  border-radius: 12px;
+  background-color: var(--accent);
+  opacity: 1;
+}
 
 /* Page header without background image (centered) */
 .page-header-plain { background: none; text-align: center; padding: 44px 0 20px; margin-bottom: 8px; }
