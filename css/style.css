@@ -1026,20 +1026,24 @@ input.invalid ~ .is-invalid-msg,
 .service-card.has-img {
   padding: 0 !important;
 }
-.service-card .card-thumb {
-  height: 185px;
+.service-card .card-thumb,
+.value-card .card-thumb {
+  height: 200px;
   width: 100%;
   overflow: hidden;
   position: relative;
   border-radius: calc(var(--r-md) - 6px) calc(var(--r-md) - 6px) 0 0;
 }
-.service-card .card-thumb img {
+.service-card .card-thumb img,
+.value-card .card-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 18%;
   transition: transform .4s cubic-bezier(0.2, 0, 0.2, 1);
 }
-.service-card:hover .card-thumb img {
+.service-card:hover .card-thumb img,
+.value-card:hover .card-thumb img {
   transform: scale(1.06);
 }
 .service-card .card-content {
@@ -1219,8 +1223,31 @@ input.invalid ~ .is-invalid-msg,
 .team-card .avatar { width: 160px; height: 160px; margin: 0 auto 18px; border-radius: var(--r-md); overflow: hidden; box-shadow: var(--shadow-2); padding: 6px; }
 .team-card .avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: calc(var(--r-md) - 6px); }
 .team-card h3 { font-size: 1.1rem; margin-bottom: 2px; }
-.team-card .role { color: var(--accent); font-weight: 700; font-family: var(--font-head); font-size: .82rem; letter-spacing: 1px; text-transform: uppercase; }
 .team-card .socials { display: flex; gap: 10px; justify-content: center; margin-top: 14px; }
+
+/* Specialist avatars on About page */
+.specialist-avatar {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-inline: auto;
+  box-shadow: var(--shadow-2);
+  border: 3px solid var(--surface);
+  background: var(--surface);
+  position: relative;
+}
+.specialist-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 12%;
+  display: block;
+  transition: transform .4s cubic-bezier(0.2, 0, 0.2, 1);
+}
+.card-neu:hover .specialist-avatar img {
+  transform: scale(1.08);
+}
 .soc {
   width: 38px; height: 38px; border-radius: 50%;
   display: grid; place-items: center; font-size: .9rem;
